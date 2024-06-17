@@ -28,6 +28,8 @@ def predict():
         model = load_model('phishing_email_detector.keras')
     elif model_type == 'RNN':
         model = load_model('phishing_email_detector_2.keras')
+    elif model_type == 'GRU':
+        model = load_model('phishing_email_detector_3.keras')
     else:
         return render_template('index.html', prediction_text='Invalid model type selected.')
     
