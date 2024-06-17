@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detector</title>
+</head>
+<body>
+    <h1>Phishing Email Detector</h1>
+    <form action="/predict" method="post">
+        <textarea name="email_text" rows="10" cols="50" placeholder="Enter the email text here..."></textarea><br>
+        <label for="model_type">Choose a model:</label>
+        <select name="model_type" id="model_type">
+            <option value="LSTM">LSTM</option>
+            <option value="RNN">RNN</option>
+        </select><br>
+        <input type="submit" value="Detect">
+    </form>
+    {% if prediction_text %}
+        <h2>Prediction: {{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
+
