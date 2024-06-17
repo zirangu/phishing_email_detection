@@ -8,7 +8,7 @@ This repository contains a machine learning application that detects phishing em
 2. [Model Architecture](#model-architecture)
 3. [Dataset](#dataset)
 4. [Application Structure](#application-structure)
-5. [Contributing](#contributing)
+5. [Reference](#Reference)
 
 ## Overview
 
@@ -30,10 +30,15 @@ We train the model on the "phishing_email.csv" dataset.
 ## Application Structure
 
 phishing-email-detector/
+
 ├── app.py # Flask application
+
 ├── phishing_email_detector.h5 # Trained model
+
 ├── requirements.txt # Required packages
+
 └── templates/
+
 └── index.html # HTML template for the web interface
 
 ## Reference
