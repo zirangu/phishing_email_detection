@@ -33,7 +33,7 @@ phishing-email-detector/
 
 ├── app.py # Flask application
 
-├── phishing_email_detector.keras # weigthts of Trained LSTM model
+├── phishing_email_detector.keras # weights of Trained LSTM model
 
 ├── phishing_email_detector2.keras # weights of Trained RNN model
 
