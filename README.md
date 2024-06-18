@@ -20,7 +20,7 @@ The deep learning model consists of the following layers:
 
 1. **Embedding Layer**: Converts input text into dense vectors of fixed size.
 2. **SpatialDropout1D Layer**: Regularizes the model by randomly dropping a fraction of the input units.
-3. **LSTM Layer**: Captures long-term dependencies in the text data.
+3. **Algorithmic Layer**: Captures long-term dependencies in the text data. This layer is either LSTM, RNN or GRU layer.
 4. **Dense Layer**: Outputs a probability value indicating whether the email is a phishing email.
 
 ## Dataset
@@ -33,7 +33,17 @@ phishing-email-detector/
 
 ├── app.py # Flask application
 
-├── phishing_email_detector.h5 # Trained model
+├── phishing_email_detector.keras # weigthts of Trained LSTM model
+
+├── phishing_email_detector2.keras # weights of Trained RNN model
+
+├── phishing_email_detector3.keras # weights of Trained GRU model
+
+├── LSTM.ipynb # trained LSTM
+
+├── RNN.ipynb # trained RNN
+
+├── GRU.ipynb # trained GRU
 
 ├── requirements.txt # Required packages
 
